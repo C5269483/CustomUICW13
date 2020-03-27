@@ -1,0 +1,24 @@
+{
+  "xsappname": "xsbizapp",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "uaa.user",
+      "description": "UAA"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Token_Exchange",
+      "description": "UAA",
+      "scope-references": [
+        "uaa.user"
+      ]
+    }
+  ],
+  "oauth2-configuration": {
+      "redirect-uris": [
+          "https://1412759f-9e39-4bb9-ae59-5791bc0fd652-workspaces-ws-kmgb4.cry10.int.applicationstudio.cloud.sap/nsuimod-1.0.0/"
+      ]
+  }
+} 
